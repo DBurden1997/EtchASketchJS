@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch A Sketch</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./etchasketch.js" defer></script>
+</head>
+<body>
+    <div id="header" class="section">
+        <h1>Etch-A-Sketch</h1>
+    </div>
+    <div id="content" class="section">
+        <div id="controls-palette">
+            <div id="controls-header">
+                <h2>Controls</h2>
+            </div>
+            <div id="controls-list">
+                <button id="clear" class="controls-button">Clear Graph</button>
+                <div id="change-size">
+                    <input id="size-input" type="number" value="16">
+                    <button class="controls-button" id="size-submit">Update Size</button>
+                </div>
+                <button id="toggle-lines" class="controls-button">Toggle Gridlines</button>
+                <button class="controls-button">Reset Graph</button>
+                <button class="controls-button">Reset Graph</button>
+            </div>
+        </div>
+        <div id="grid-container">
+
+        </div>
+    </div>
+    <div id="footer" class="section">
+        Copyright <span class="copyright">©</span> Dylan Burden 2022
+        <a href="https://github.com/DBurden1997" target="_blank">
+            <img class="github-mark" alt="Github Icon" src="./images/GitHub-Mark-Light-32px.png"></i>
+        </a>
+    </div>
+    <div id="new-grid-modal" class="modal">
+        <span class="modal-text">Select a New Grid Size</span>
+        <input class="size-input" type="number" alt="Input a number here" value="16">
+        <button class="confirm">Make Grid</button>
+    </div>
+</body>
+</html>
